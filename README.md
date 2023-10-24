@@ -1,4 +1,4 @@
-# 📬 BunMail 
+# 📬 BunMail
 
 Hey there, welcome to BunMail! This is a nifty little email server designed to securely send emails via POST requests. Plus, it's built on Bun! Cool, right?
 
@@ -6,10 +6,30 @@ Hey there, welcome to BunMail! This is a nifty little email server designed to s
 
 Getting started is as simple as 1, 2, 3!
 
-### 1. **Clone this Repo**
+### 1. **Create the Docker Compose File**
 
-```bash
-git clone https://github.com/biohackerellie/bunmail-express.git
+```yaml
+version: '3'
+
+services:
+  server:
+
+    image: biohackerellie/bunmail
+    container_name: BunEmailServer
+    restart: unless-stopped
+    ports:
+      - '6969:6969'
+    environment:
+      API_KEY: ${API_KEY}
+      GMAIL_USER: ${GMAIL_USER}
+      GMAIL_PASSWORD: ${GMAIL_PASSWORD}
+      ALLOWED_DOMAINS: ${ALLOWED_DOMAINS}
+			OAUTH: ${OAUTH}
+      CLIENT_ID: ${CLIENT_ID}
+      CLIENT_SECRET: ${CLIENT_SECRET}
+      REFRESH_TOKEN: ${REFRESH_TOKEN}
+      ACCESS_TOKEN: ${ACCESS_TOKEN}
+
 ```
 
 ### 2. Edit Environment Variables
@@ -23,12 +43,12 @@ environment:
   GMAIL_USER: Your-Email-Here
   GMAIL_PASSWORD: Your-Password-Here
   ALLOWED_DOMAINS: Domain1,Domain2,Domain3 # or * for all domains
+  ### others as needed. See docs for configuring email providers
 ```
 
-### 3. Run Docker Compose
+#### 3. Run Docker Compose
 
 ```bash
-cd bunmail-express/ &&
 sudo docker compose up -d
 ```
 

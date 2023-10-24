@@ -2,14 +2,19 @@ version: '3'
 
 services:
   server:
-    build: .
-    image: bun-email-server
+
+    image: biohackerellie/bunmail@latest
     container_name: BunEmailServer
     restart: unless-stopped
     ports:
       - '6969:6969'
     environment:
       API_KEY: ${API_KEY}
-      GMAIL_USER: ${GMAIL_USER}
-      GMAIL_PASSWORD: ${GMAIL_PASSWORD}
+      EMAIL_USER: ${EMAIL_USER}
+      EMAIL_PASSWORD: ${EMAIL_PASSWORD}
       ALLOWED_DOMAINS: ${ALLOWED_DOMAINS}
+      OAUTH: ${OAUTH}
+      CLIENT_ID: ${CLIENT_ID}
+      CLIENT_SECRET: ${CLIENT_SECRET}
+      REFRESH_TOKEN: ${REFRESH_TOKEN}
+      ACCESS_TOKEN: ${ACCESS_TOKEN}
