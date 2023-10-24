@@ -1,6 +1,6 @@
-# 📬 BunMail Express
+# 📬 BunMail 
 
-Hey there, welcome to BunMail Express! This is a nifty little email server designed to securely send emails via POST requests. Plus, it's built on Bun! Cool, right?
+Hey there, welcome to BunMail! This is a nifty little email server designed to securely send emails via POST requests. Plus, it's built on Bun! Cool, right?
 
 ## 🚀 Quick Start
 
