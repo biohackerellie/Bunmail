@@ -1,0 +1,5 @@
+.env*
+README.md
+*.code-workspace
+.gitignore
+node_modules
