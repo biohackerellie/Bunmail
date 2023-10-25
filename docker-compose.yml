@@ -3,7 +3,7 @@ version: '3'
 services:
   server:
 
-    image: biohackerellie/bunmail@latest
+    image: biohackerellie/bunmail:latest
     container_name: BunEmailServer
     restart: unless-stopped
     ports:
