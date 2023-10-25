@@ -20,7 +20,11 @@ Hey there, welcome to BunMail! This is a nifty little email server designed to s
 
 ## 🚀 Quick Start
 
-Getting started is as simple as 1, 2, 3!
+Getting started is made easy with Docker! But no matter which route you choose, you will need to generate your own API key. You can do this by running the following command:
+
+```bash
+openssl rand -hex 32
+```
 
 ### With Docker Compose (Recommended)
 
