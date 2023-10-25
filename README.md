@@ -125,14 +125,6 @@ Send a POST request to `http://localhost:6969/email` with the following JSON bod
 
 If everything's set up correctly, you'll get a sweet message back saying "Email Sent Successfully" 🎉.
 
-## 🔒 Security
-
-BunMail Express uses CORS to control which domains can send requests. You can easily configure this by updating the ALLOWED_DOMAINS environment variable. Want to allow any domain? Just set it to \*.
-
-## 🐳 Docker
-
-Yep, this project is Docker-friendly! Just follow the Quick Start guide above and you'll have a containerized email server running in no time.
-
 ## 🤔 Questions or Issues?
 
 Feel free to open an issue or submit a pull request. Any contributions are welcome!
