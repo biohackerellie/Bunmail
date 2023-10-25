@@ -1,6 +1,5 @@
 import { EmailRequest } from '@/lib/types';
 import { authOptions, oauthOptions } from '@/lib/authOptions';
-
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 
@@ -26,7 +25,7 @@ export async function Sender(body: EmailRequest) {
 			subject: body.subject,
 			html: body.html,
 		});
-
+		console.log('email sent');
 		return Response.json({ status: 200, body: 'Email Sent Successfully' });
 	} catch (error) {
 		console.log(error);
