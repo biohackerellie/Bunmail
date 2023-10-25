@@ -55,7 +55,7 @@ services:
 
 #### 2. Edit Environment Variables
 
-- Option A: Create a `.env` file based on the provided `env.example` and fill in your own values.
+- Option A: Create a `.env` file based on the provided `env.example` and fill in your own values. Keep the .env file in the same directory as the docker-compose.yml file.
 - Option B: You can also directly edit the docker-compose.yml file if you'd rather:
 
 ```yaml
