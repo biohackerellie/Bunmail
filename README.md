@@ -10,11 +10,6 @@
     - [Create the Docker Compose File](#1-create-the-docker-compose-file)
     - [Edit Environment Variables](#2-edit-environment-variables)
     - [Run Docker Compose](#3-run-docker-compose)
-  - [Docker Run Command](#docker-run-command)
-  - [Without Docker](#without-docker)
-- [💌 How to Send Emails](#-how-to-send-emails)
-- [🔒 Security](#-security)
-- [🐳 Docker](#-docker)
 - [🤔 Questions or Issues?](#-questions-or-issues)
 
 ---
