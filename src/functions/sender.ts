@@ -9,7 +9,7 @@ export async function Sender(body: EmailRequest) {
 	if (process.env.OAUTH?.toLowerCase() === 'true') {
 		options = oauthOptions;
 	}
-	console.log(options);
+
 	if (body.key !== process.env.API_KEY) {
 		return Response.json({ status: 401, body: 'Unauthorized' });
 	}

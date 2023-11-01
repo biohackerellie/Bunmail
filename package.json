@@ -1,19 +1,19 @@
 {
-	"name": "app",
-	"version": "1.0.50",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "bun run --watch index.ts"
-	},
-	"dependencies": {
-		"@elysiajs/cors": "^0.7.1",
-		"date-fns": "^2.30.0",
-		"dotenv": "^16.3.1",
-		"elysia": "latest",
-		"nodemailer": "^6.9.7"
-	},
-	"devDependencies": {
-		"bun-types": "latest"
-	},
-	"module": "index.js"
+  "name": "app",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^0.7.1",
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.3.1",
+    "elysia": "latest",
+    "nodemailer": "^6.9.7"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "module": "index.js"
 }
