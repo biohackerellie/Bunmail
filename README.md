@@ -1,7 +1,10 @@
 # 📬 BunMail
 
+![Logo](./public/BunMailLogo.png)
+
 ## Table of Contents
 
+- [📖 Read the Docs](#-read-the-docs)
 - [🚀 Quick Start](#-quick-start)
   - [With Docker Compose (Recommended)](#with-docker-compose-recommended)
     - [Create the Docker Compose File](#1-create-the-docker-compose-file)
@@ -17,6 +20,10 @@
 ---
 
 Hey there, welcome to BunMail! This is a nifty little email server designed to securely send emails via POST requests. Plus, it's built on Bun! Cool, right?
+
+## 📖 Read the Docs
+
+You can find the full documentation [here](https://docs.epklabs.com/BunMail)
 
 ## 🚀 Quick Start
 
@@ -75,59 +82,6 @@ sudo docker compose up -d
 ```
 
 That's it! Your server will be up and running at `http://localhost:6969`.
-
-### Docker Run Command
-
-You can also use the following docker run command instead of using docker compose:
-
-```bash
-docker run -p 6969:6969 \
--e API_KEY=Your-API-Key-Here \
--e GMAIL_USER=Your-Email-Here \
--e GMAIL_PASSWORD=Your-Password-Here \
--e ALLOWED_DOMAINS=Domain1,Domain2,Domain3 # or '*' for all domains \
- # --- Outh2 env variables if needed ---
-biohackerellie/bunmail
-```
-
-### Without Docker
-
-Alternatively, you can run the server without Docker. Just follow these steps:
-
-1. Clone the repo
-   ```bash
-   git clone https://github.com/biohackerellie/Bunmail.git
-   ```
-2. Install Bun and the dependencies
-   ```bash
-   cd Bunmail \
-   # Install Bun
-   curl -fsSL https://bun.sh/install | bash && \
-   # Install dependencies
-   bun install
-   ```
-3. Create a `.env` file based on the provided `env.example` and fill in your own values.
-
-4. Run the server
-   ```bash
-   bun run ./index.ts
-   ```
-
-## 💌 How to Send Emails
-
-Send a POST request to `http://localhost:6969/email` with the following JSON body:
-
-```json
-{
-	"key": "Your-API-Key-Here",
-	"to": "recipient@example.com",
-	"from": "sender@example.com",
-	"subject": "Hello, World!",
-	"html": "<h1>Hi there!</h1>"
-}
-```
-
-If everything's set up correctly, you'll get a sweet message back saying "Email Sent Successfully" 🎉.
 
 ## 🤔 Questions or Issues?
 
