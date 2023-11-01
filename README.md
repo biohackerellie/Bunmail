@@ -1,5 +1,7 @@
 # 📬 BunMail
 
+## 🐳 Available on [Docker Hub](https://hub.docker.com/r/biohackerellie/bunmail)
+
 ![Logo](./public/BunMailLogo.png)
 
 ## Table of Contents
